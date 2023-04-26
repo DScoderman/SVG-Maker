@@ -1,6 +1,6 @@
 const inquirer =require("inquirer")
 const fs =require ('fs')
-const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt')
+
 
 const shapeJS = require("./lib/shape.js");
 
@@ -32,7 +32,9 @@ const questions = [
         type: "maxlength-input",
         message: "choose 3 chracters to input.",
         name: "textInput",
-        MaxLength: 3
+        validate: (text) => {
+         return text.length <= 3 || "choose only 3 characters!"
+        }
     },
     {
         type: "input",

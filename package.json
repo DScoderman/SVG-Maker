@@ -1,8 +1,13 @@
 {
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "init": "^0.1.2",
     "inquirer": "^8.2.4",
-    "inquirer-maxlength-input-prompt": "^1.0.2",
+    "inquirer-maxlength-input-prompt": "^1.0.2"
+  },
+  "devDependencies": {
     "jest": "^29.5.0"
   }
 }
